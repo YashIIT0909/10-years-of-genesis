@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './pages/HomePage/HomePage';
-// import AboutPage from './pages/AboutPage/AboutPage'; // Example for later
+import AboutusPage from './pages/AboutusPage/AboutusPage.jsx';
 import './App.css'; // For global app layout styles if needed
 import { GitHub, Twitter, LinkedIn } from '@mui/icons-material'; // Example icons for a nav
 
@@ -13,7 +13,7 @@ function App() {
           <Link to="/" className="nav-logo">ETH10Y</Link>
           <div className="nav-links">
             <Link to="/">Home</Link>
-            {/* <Link to="/about">About</Link> */}
+            <Link to="/about">About</Link> 
             {/* <Link to="/events">Events</Link> */}
           </div>
           <div className="social-links-nav">
@@ -26,7 +26,7 @@ function App() {
         <main className="content-area">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            {/* <Route path="/about" element={<AboutPage />} /> */}
+             <Route path="/about" element={<AboutusPage />} /> 
             {/* Add more routes here */}
           </Routes>
         </main>

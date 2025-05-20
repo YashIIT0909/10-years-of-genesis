@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.main-containner
+{
+    margin: 1rem;
+    height: 100%;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(127, 127, 213, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(40, 40, 70, 0.8);
+}
+.main-containner h1{
+    
+
+ font-family: 'Roboto Mono', monospace;
+  
+}
+.content
+{
+    padding: 1rem;
+}
+.content p{
+    margin: 5px;
+}
+.content ul{
+    margin: 0px 0px 5px 10px;
+}
+ul img{
+    height: 25px;
+    width: 25px;
+}
+ul li{
+    list-style: none;
+    display: flex;
+    margin: 5px;
+   
+}
+.points
+{
+    margin: auto 0px ;
+}
+
+
+
+
