@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './HomePage.css';
-import EthereumLogo from '../../assets/Eth-logo.svg';
+import EthereumLogo from '../../assets/Eth-logo2.svg';
 import {
   Timeline as TimelineIcon,
   Code as CodeIcon,
@@ -41,36 +41,39 @@ const HomePage = () => {
       year: '2015',
       title: 'Ethereum Genesis',
       description: 'The Ethereum network officially launches, enabling smart contracts and dApps.',
+      icon: <RocketLaunchIcon/>
    
     },
     {
       year: '2017',
       title: 'ICO Boom & ERC-20',
       description: 'The ERC-20 token standard fuels a wave of Initial Coin Offerings, showcasing Ethereum\'s versatility.',
+      icon: <TrendingUpIcon />,
     
     },
     {
       year: '2020',
       title: 'DeFi Summer',
       description: 'Decentralized Finance applications explode in popularity, locking billions in value.',
-
+      icon: <CodeIcon />,
     },
     {
       year: '2021',
       title: 'NFT Mania',
       description: 'Non-Fungible Tokens enter mainstream consciousness, revolutionizing digital ownership.',
-
+      icon: <CelebrationIcon />,
     },
     {
       year: '2022',
       title: 'The Merge',
       description: 'Ethereum transitions from Proof-of-Work to Proof-of-Stake, drastically reducing energy consumption.',
-  
+      icon: <TimelineIcon />,
     },
     {
       year: '2025',
       title: 'A Decade of Innovation!',
       description: 'Celebrating 10 years of decentralized progress and looking to the future.',
+      icon: <PeopleAltIcon />,
     },
   ];
 
@@ -139,7 +142,7 @@ const HomePage = () => {
           <motion.h1 variants={heroTextVariants}>
             Celebrating <span className="highlight">10 Years</span> of Ethereum
           </motion.h1>
-          <motion.p variants={heroTextVariants} style={{ transitionDelay: '0.5s' }}>
+          <motion.p variants={heroTextVariants} style={{ transitionDelay: '0.1ms' }}>
             A decade of decentralization, innovation, and community.
             <br />
             Explore the journey and what's next.
@@ -240,9 +243,9 @@ const HomePage = () => {
                 borderColor: '#86a8e7'
               }}
             >
-             
+              <div className="milestone-icon">{milestone.icon}</div>
               <div className="milestone-content">
-                <h3>{milestone.year} - {milestone.title}</h3>
+                <h3>{milestone.year}- {milestone.title}</h3>
                 <p>{milestone.description}</p>
               </div>
             </motion.div>
