@@ -1,9 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './pages/HomePage/HomePage';
-// import AboutPage from './pages/AboutPage/AboutPage'; // Example for later
-import './App.css'; // For global app layout styles if needed
-import { GitHub, Twitter, LinkedIn } from '@mui/icons-material'; // Example icons for a nav
+import './App.css'; 
+import { GitHub, Twitter, LinkedIn } from '@mui/icons-material'; 
 
 function App() {
   return (
