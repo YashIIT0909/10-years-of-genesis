@@ -1,8 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './pages/HomePage/HomePage';
-import './App.css'; 
-import { GitHub, Twitter, LinkedIn } from '@mui/icons-material'; 
+import TimelinePage from './pages/TimelinePage/TimelinePage'; 
+
+import './App.css'; // For global app layout styles if needed
+import { GitHub, Twitter, LinkedIn } from '@mui/icons-material'; // Example icons for a nav
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
           <Link to="/" className="nav-logo">ETH10Y</Link>
           <div className="nav-links">
             <Link to="/">Home</Link>
+            <Link to="/timeline">Timeline</Link>
             {/* <Link to="/about">About</Link> */}
             {/* <Link to="/events">Events</Link> */}
           </div>
@@ -25,6 +28,7 @@ function App() {
         <main className="content-area">
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/timeline" element={<TimelinePage />} />
             {/* <Route path="/about" element={<AboutPage />} /> */}
             {/* Add more routes here */}
           </Routes>
