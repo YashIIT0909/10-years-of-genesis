@@ -71,7 +71,6 @@ const HomePage = () => {
       year: '2025',
       title: 'A Decade of Innovation!',
       description: 'Celebrating 10 years of decentralized progress and looking to the future.',
-
     },
   ];
 
