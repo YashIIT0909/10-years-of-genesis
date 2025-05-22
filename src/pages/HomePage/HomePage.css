@@ -2,7 +2,7 @@
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  background: url('../../assets/background-image.png') no-repeat center center fixed; 
+  background: url('../../assets/background-image2.png') no-repeat center center fixed; 
   background-size: cover; 
 }
 
@@ -87,12 +87,14 @@
 
 .hero-logo-container {
   flex-shrink: 0;
+  scale: 150%;
 }
 
 .hero-logo {
   width: 200px; 
   height: auto;
-  filter: drop-shadow(0px 0px 15px rgba(220, 220, 255, 0.7));
+  opacity: 70%;
+  filter: drop-shadow(0px 0px 8px rgba(220, 220, 255, 0.7));
 }
 
 
@@ -151,7 +153,7 @@
   bottom: 0;
   left: 50%;
   margin-left: -1.5px;
-  z-index: -1; 
+  z-index: 2; 
 }
 
 .milestone-card {
@@ -200,7 +202,8 @@
 
 .milestone-icon {
   position: absolute;
-  top: 50%;
+  top: 20%;
+  left: 85%;
   transform: translateY(-50%);
   width: 50px;
   height: 50px;
