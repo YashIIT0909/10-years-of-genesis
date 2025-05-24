@@ -6,7 +6,7 @@ import TimelinePage from './pages/TimelinePage/TimelinePage';
 
 import './App.css'; // For global app layout styles if needed
 import { GitHub, Twitter, LinkedIn } from '@mui/icons-material'; // Example icons for a nav
-import MerchPage from './pages/HomePage/MerchPage';
+import MerchPage from './pages/MerchPage/MerchPage';
 import ScrollToTopButton from './components/moveToTop'; // Import the scroll to top button
 
 function App() {
